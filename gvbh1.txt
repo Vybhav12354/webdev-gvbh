@@ -2,56 +2,30 @@
 <html>
     <head>
         <script>
-function displaySelectedValue0() {
-  var selectElement = document.getElementById("a");
-  var selectedValue = selectElement.value;
-  document.getElementById("output0").innerHTML =selectedValue;
-}
-function displaySelectedValue1() {
-  var selectElement = document.getElementById("b");
-  var selectedValue = selectElement.value;
-  document.getElementById("output1").innerHTML =selectedValue;
-}
-function displaySelectedValue2() {
-  var selectElement = document.getElementById("c");
-  var selectedValue = selectElement.value;
-  document.getElementById("output2").innerHTML =selectedValue;
-}
-function displaySelectedValue3() {
-  var selectElement = document.getElementById("d");
-  var selectedValue = selectElement.value;
-  document.getElementById("output3").innerHTML =selectedValue;
-}
-function displaySelectedValue4() {
-  var selectElement = document.getElementById("e");
-  var selectedValue = selectElement.value;
-  document.getElementById("output4").innerHTML =selectedValue;
-}
-function displaySelectedValue5() {
-  var selectElement = document.getElementById("f");
-  var selectedValue = selectElement.value;
-  document.getElementById("output5").innerHTML =selectedValue;
-}
-function displaySelectedValue6() {
-  var selectElement = document.getElementById("g");
-  var selectedValue = selectElement.value;
-  document.getElementById("output6").innerHTML =selectedValue;
-}
-function displaySelectedValue7() {
-  var selectElement = document.getElementById("h");
-  var selectedValue = selectElement.value;
-  document.getElementById("output7").innerHTML =selectedValue;
-}
-function displaySelectedValue8() {
-  var selectElement = document.getElementById("i");
-  var selectedValue = selectElement.value;
-  document.getElementById("output8").innerHTML =selectedValue;
-}
-function displaySelectedValue9() {
-  var selectElement = document.getElementById("j");
-  var selectedValue = selectElement.value;
-  document.getElementById("output9").innerHTML =selectedValue;
-}
+    document.addEventListener('DOMContentLoaded', start, false);
+        function start(){
+            document.getElementById("a").addEventListener("click", function(){addText(this);} );
+            document.getElementById("b").addEventListener("click", function(){addText(this);} );
+            document.getElementById("c").addEventListener("click", function(){addText(this);} );
+            document.getElementById("d").addEventListener("click", function(){addText(this);} );
+            document.getElementById("e").addEventListener("click", function(){addText(this);} );
+            document.getElementById("f").addEventListener("click", function(){addText(this);} );
+            document.getElementById("g").addEventListener("click", function(){addText(this);} );
+            document.getElementById("h").addEventListener("click", 
+                function(){addText(this);} );
+             document.getElementById("i").addEventListener("click", 
+                function(){addText(this);} );
+             document.getElementById("j").addEventListener("click", 
+                function(){addText(this);} );
+                
+                
+                
+            function addText(elem) {
+
+                document.getElementById("text").innerHTML += elem.value;
+
+            }
+        };
 </script>
 
         <style>
@@ -65,7 +39,7 @@ function displaySelectedValue9() {
 <body>
 
 <h1 style=text-align:center;>Bank form</h1>
-<form autocomplete="on"
+<form autocomplete="on">
    <label for="bank">Select your bank</label> <br><br>
     <select id="bank" required>
         <option>Bank of Baroda</option>
@@ -76,8 +50,18 @@ function displaySelectedValue9() {
         <option>Central Bank of India</option>
     </select>
     <br><br>
-    <label for="name">Account Holder's Name</label><br><br>
+    <label for="name">Account Holder's Name:</label><br><br>
     
+    <label for="name" style=font-size:15px;>First Name:</label>
+    <input id="name" type="text" placeholder="Enter your first name"required>
+    
+    <label for="name" style=font-size:15px;>Middle Name:</label>
+    <input id="name" type="text" placeholder="Enter your last name">
+    
+    <label for="name" style=font-size:15px;>Last Name:</label>
+    <input id="name" type="text" placeholder="Enter your last name"required><br><br>
+
+    <label for= "button">Account No:</label><br><br>
     <button type="button"value=0 id="a"onclick=displaySelectedValue0()>0</button>
     
     
@@ -92,20 +76,19 @@ function displaySelectedValue9() {
     <button type="button"value=4 id="e"onclick=displaySelectedValue4()>4</button>
     
     
-    <button type="button"value=5 id="f"onclick=displaySelectedValue5()>5</button>
+    <button type="button"value=5 id="f">5</button>
     
     
-    <button type="button"value=6id="b"onclick=displaySelectedValue6()>6</button>
-   
+    <button type="button"value=6 id="g"onclick=displaySelectedValue6()>6</button>
     
-    <wbr><p id=output1></nobr>
-    <nobr id=output2></nobr>
-    <nobr id=output3></nobr>
-    <nobr id=output4></nobr>
-    <nobr id=output5></nobr>
-    <nobr id=output6></nobr>
-    <nobr id=output7></nobr>
-</wbr>
+    <button type="button"value=7 id="h"onclick=displaySelectedValue6()>7</button>
+    
+    <button type="button"value=8 id="i"onclick=displaySelectedValue6()>8</button>
+    
+    <button type="button"value=9 id="j">9</button>
+   <br><br>
+    <textarea id ="text" style="font-size:20px; width:200px; height:30px;" minlength=10 maxlength=10 placeholder="xxxxxxxxxx" required ></textarea>
+
 </form>
 
 </body>
