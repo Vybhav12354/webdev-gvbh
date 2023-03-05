@@ -1,1 +1,112 @@
-my new form
+<!D<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+function displaySelectedValue0() {
+  var selectElement = document.getElementById("a");
+  var selectedValue = selectElement.value;
+  document.getElementById("output0").innerHTML =selectedValue;
+}
+function displaySelectedValue1() {
+  var selectElement = document.getElementById("b");
+  var selectedValue = selectElement.value;
+  document.getElementById("output1").innerHTML =selectedValue;
+}
+function displaySelectedValue2() {
+  var selectElement = document.getElementById("c");
+  var selectedValue = selectElement.value;
+  document.getElementById("output2").innerHTML =selectedValue;
+}
+function displaySelectedValue3() {
+  var selectElement = document.getElementById("d");
+  var selectedValue = selectElement.value;
+  document.getElementById("output3").innerHTML =selectedValue;
+}
+function displaySelectedValue4() {
+  var selectElement = document.getElementById("e");
+  var selectedValue = selectElement.value;
+  document.getElementById("output4").innerHTML =selectedValue;
+}
+function displaySelectedValue5() {
+  var selectElement = document.getElementById("f");
+  var selectedValue = selectElement.value;
+  document.getElementById("output5").innerHTML =selectedValue;
+}
+function displaySelectedValue6() {
+  var selectElement = document.getElementById("g");
+  var selectedValue = selectElement.value;
+  document.getElementById("output6").innerHTML =selectedValue;
+}
+function displaySelectedValue7() {
+  var selectElement = document.getElementById("h");
+  var selectedValue = selectElement.value;
+  document.getElementById("output7").innerHTML =selectedValue;
+}
+function displaySelectedValue8() {
+  var selectElement = document.getElementById("i");
+  var selectedValue = selectElement.value;
+  document.getElementById("output8").innerHTML =selectedValue;
+}
+function displaySelectedValue9() {
+  var selectElement = document.getElementById("j");
+  var selectedValue = selectElement.value;
+  document.getElementById("output9").innerHTML =selectedValue;
+}
+</script>
+
+        <style>
+            form{
+                font-size:20px;
+            
+            }
+        </style>
+        
+    </head>
+<body>
+
+<h1 style=text-align:center;>Bank form</h1>
+<form autocomplete="on"
+   <label for="bank">Select your bank</label> <br><br>
+    <select id="bank" required>
+        <option>Bank of Baroda</option>
+        <option>Bank of India</option>
+        <option>HDFC BANK</option>
+        <option>SBI</option>
+        <option>Union Bank of India</option>
+        <option>Central Bank of India</option>
+    </select>
+    <br><br>
+    <label for="name">Account Holder's Name</label><br><br>
+    
+    <button type="button"value=0 id="a"onclick=displaySelectedValue0()>0</button>
+    
+    
+    <button type="button"value=1 id="b"onclick=displaySelectedValue1()>1</button>
+    
+    
+    <button type="button"value=2 id="c"onclick=displaySelectedValue2()>2</button>
+    
+    <button type="button"value=3 id="d"onclick=displaySelectedValue3()>3</button>
+    
+    
+    <button type="button"value=4 id="e"onclick=displaySelectedValue4()>4</button>
+    
+    
+    <button type="button"value=5 id="f"onclick=displaySelectedValue5()>5</button>
+    
+    
+    <button type="button"value=6id="b"onclick=displaySelectedValue6()>6</button>
+   
+    
+    <wbr><p id=output1></nobr>
+    <nobr id=output2></nobr>
+    <nobr id=output3></nobr>
+    <nobr id=output4></nobr>
+    <nobr id=output5></nobr>
+    <nobr id=output6></nobr>
+    <nobr id=output7></nobr>
+</wbr>
+</form>
+
+</body>
+</html>
