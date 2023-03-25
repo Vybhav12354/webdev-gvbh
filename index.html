@@ -1,46 +1,165 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-            .intro{
-                background-color: black;
+<html>
+<title>Online HTML Editor</title>
+<head>
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+       body{
+        background-color: black;
+        overflow: scroll;
+
+       }
+       .nav{
+        background-color: rgb(26, 26, 26);
+
+       }
+       ul{
+            margin:-10px;
+            padding-left: 300px;
+            padding-right: 100px;
+            overflow: hidden;            
+       }
+       li{
+        list-style-type: none;
+        float:left;
+
+       }
+       a:hover{
+        background-color: rgb(102, 102, 102)
+;
+       }
+       a{
+           display:block;
+           color:white;
+           padding:20px;
+           text-decoration:none;
+           font-size: 25px;
+       }
+      .img1{
+        float:left;
+        width:200px;
+        height:200px;
+        position: absolute;
+        top:150px;
+        left:300px;
+
+      }
+      h1{
+            float:left;
+            position:absolute;
+            left:900px;
+            top:175px;
+            color:white;
+        }
+        .h2{
+            float:left;
+            position:absolute;
+            left:900px;
+            top:225px;
+            color:white;
+        }
+        .h3{
+            float:left;
+            position:absolute;
+            left:900px;
+            top:255px;
+            color:white;
+        }
+        .h4{
+            float:left;
+            position:absolute;
+            left:900px;
+            top:285px;
+            color:white;
+        }
+			.body{
+                position: absolute;
+                text-align: center;
+                top: 305px;
+                left:-300px;
             }
-            .g{
-                padding-top: 150px;
-                padding-left: 300px;
-                padding-bottom: 150px;
-                padding-right: 600px; ;
-                color:white;
-                margin-left: auto;
-                white-space: wrap;
-                border:1px solid white;
-                
+            .img2{
+                width:600px;
+                height: 500px;
+                position:absolute;
+            left: 100px;
+            top: 600px;
             }
-            .img{
-               float: right;
-               margin-left: auto;
-               margin-top: -250px;
-               width: 150px;
-               height: 175px;
-               border-radius: 50%;
-               
+            .img3{
+                width:600px;
+                height: 500px;
+                position:absolute;
+            left: 725px;
+            right:100px;
+            top: 600px;
+            float:left;
             }
-            p{
-                max-width: 100px;
+            .body2{
+                position: absolute;
+                text-align: center;
+                top: 905px;
+                left:-300px;
             }
-        </style>
-    <body>
-        <div class="header">
-            <h2>VBH.G</h2>
-        </div>
-        <div class="intro">
-            <div class="g">
-        <h1 class="h">G.Vybhav </h1>
-        <p >Student at gitam university, visakhapatnam.
-        </p>
-            </div>
-            
-        <picture><source srcset="C:\Users\pc new\Desktop\gitam cirtificates\vbh.jpg"></picture> 
-    </div>
-    </body>
-    </html>
+            .body3{
+                position: static;
+                top: 1105px;
+                left:-300px;
+            }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <code><li style="float:right"><b><a style="color:green;"href="#c1">VBH_G</a></li>
+        </b>
+        <li><a href="#" style="color:white;">Home</a></li>
+        <li><a href="#c2" style="color:white;">Certificates</a></li>
+
+        <li><a href="#" style="color:white;">Education</a></li>
+        <li><a href="#" style="color:white;">Projects </a></li>
+
+        <li><a href="#" style="color:white;">Contact</a></li>
+</code>
+    </ul>
+</div>
+
+
+
+    <div class="header">
+<img class="img1" src = https://previews.123rf.com/images/kritchanut/kritchanut1406/kritchanut140600093/29213195-male-silhouette-avatar-profile-picture.jpg ></img>
+<code><h1 id="c1">G Vybhav</h1>
+    <h3 class="h2">Student</h3><br>
+    <h3 class="h3">BCA-Bachelor of Computer Applications</h3><br>
+    <h3 class="h4">Gitam Deemed To Be University</h3>
+</code></div>
+<div class="body">
+
+<code><h1 >Certificates</h1></code>
+</div >
+<img id ="c2" src="C:\Users\pc new\Desktop\certify.JPG" class="img2">
+<img src="C:\Users\pc new\Desktop\certify2.JPG" class="img3">
+
+<div class="body2">
+
+    <code><h1 >Education</h1>
+        <h2>erfjkvhnkfnd</h2>
+    <table>
+        <tr>
+            <th>Schooling</th>
+            <th>Institute Name</th>
+        </tr>
+        <tr>
+            <td>1-8</td>
+            <td>Aditya Educational Institutes</td>
+        </tr>
+        <tr>
+            <td>9-10</td>
+            <td>Sasi Educational Institutes</td>
+        </tr>
+    </table>
+    </code>
+    </div >
+</body>
+</html>
