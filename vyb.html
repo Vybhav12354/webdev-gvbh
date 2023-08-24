@@ -10,6 +10,71 @@
     <link href='https://fonts.googleapis.com/css?family=Tilt Prism' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+    *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px ;
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(231, 238, 231);
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 5px 25px;
+    transition: 0.2s;
+    border-radius: 30px;
+
+}
+.nav-bar ul li a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.container{
+    width: 100%;
+    height: 530px;
+    background-image: url("https://thumbs.gfycat.com/ClassicUnluckyBushsqueaker-size_restricted.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.main{
+    color: white;
+    font-weight:bolder ;
+}
+
+.main1 input[type=text] {
+   width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    border-radius: 30px;
+}
+
 body {
     font-family: 'Open Sans';
 }
